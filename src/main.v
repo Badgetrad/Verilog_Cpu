@@ -122,9 +122,9 @@
 	);
 	
 	wire [7:0] alu_out;
-	localparam LDI = 4'b0111;
-	parameter LOAD = 4'b1000;
-	parameter STORE= 4'b1001;
+	parameter LDI   = 4'h0;
+	parameter LOAD  = 4'h2;
+	parameter STORE = 4'h3;
 	
 	alu u_alu(
 		.reg_a(reg_a),

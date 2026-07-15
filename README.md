@@ -43,19 +43,19 @@ H-type : Halt instruction
 | `JMP addr`       |  `0xE` | `[opcode][addr12]`       | `PC = addr`      |
 | `HLT`            |  `0xF` | `[opcode][------------]` | Halt execution   |
 
-opcode  : instruction opcode (4 bits)
-rd      : destination register (4 bits)
-rs      : source register (4 bits)
-imm8    : 8-bit immediate
-addr8   : 8-bit memory address
-address12 : 12-bit jump address
+opcode  : instruction opcode (4 bits)     
+rd      : destination register (4 bits)     
+rs      : source register (4 bits)     
+imm8    : 8-bit immediate     
+addr8   : 8-bit memory address     
+address12 : 12-bit jump address    
 
 ## Future Work
 
-SPI-based instruction loading and programming
-Conditional branch instructions (JZ, JNZ)
-Pipeline-based execution
-Clock stepping and debugging support
+SPI-based instruction loading    
+Conditional branch instructions (JZ, JNZ)    
+Pipeline-based execution     
+Clock stepping and debugging support     
 
 
 

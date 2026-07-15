@@ -40,7 +40,7 @@ H-type : Halt instruction
 | `NOT Rd`         |  `0xB` | `[opcode][rd][--------]` | `Rd = ~Rd`       |
 | `SHL Rd`         |  `0xC` | `[opcode][rd][--------]` | `Rd = Rd << 1`   |
 | `SHR Rd`         |  `0xD` | `[opcode][rd][--------]` | `Rd = Rd >> 1`   |
-| `JMP addr`       |  `0xE` | `[opcode][addr12]`       | `PC = addr`      |
+| `JMP addr`       |  `0xE` | `[opcode][----][addr8]`  | `PC = addr`      |
 | `HLT`            |  `0xF` | `[opcode][------------]` | Halt execution   |
 
 opcode  : instruction opcode (4 bits)     
@@ -48,7 +48,6 @@ rd      : destination register (4 bits)
 rs      : source register (4 bits)     
 imm8    : 8-bit immediate     
 addr8   : 8-bit memory address     
-address12 : 12-bit jump address    
 
 ## Future Work
 

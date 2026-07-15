@@ -19,11 +19,11 @@ The processor supports arithmetic, logical, memory, and control-flow operations 
 | J-type | `[opcode][addr12]`       | `JMP`                             |
 | H-type | `[opcode][------------]` | `HLT`                             |
 
-R-type : Register-register operations
-I-type : Immediate and memory operations
-S-type : Single-register operations
-J-type : Jump instructions
-H-type : Halt instruction
+R-type : Register-register operations      
+I-type : Immediate and memory operations     
+S-type : Single-register operations     
+J-type : Jump instructions     
+H-type : Halt instruction     
 
 | Instruction      | Opcode | Format                   | Meaning          |
 | ---------------- | -----: | ------------------------ | ---------------- |

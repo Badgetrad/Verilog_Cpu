@@ -54,7 +54,9 @@ addr8   : 8-bit memory address
 SPI-based instruction loading    
 Conditional branch instructions (JZ, JNZ)    
 Pipeline-based execution     
-Clock stepping and debugging support     
+Clock stepping and debugging support   
+Optimization for reducing LUTs    
+Small OLED display support
 
 
 

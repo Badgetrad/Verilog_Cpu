@@ -16,7 +16,7 @@ The processor supports arithmetic, logical, memory, and control-flow operations 
 | R-type | `[opcode][rd][rs][----]` | `ADD`, `SUB`, `AND`, `OR`, `XOR`  |
 | I-type | `[opcode][rd][imm8]`     | `LDI`,`LOAD`, `STORE`             |
 | S-type | `[opcode][rd][--------]` | `INC`, `DEC`, `NOT`, `SHL`, `SHR` |
-| J-type | `[opcode][addr12]`       | `JMP`                             |
+| J-type | `[opcode][----][addr8]`  | `JMP`                             |
 | H-type | `[opcode][------------]` | `HLT`                             |
 
 R-type : Register-register operations      
